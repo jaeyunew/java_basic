@@ -11,8 +11,11 @@ public class 배열1_연습문제3 {
         for (int i = 0; i < array.length; i++) {
             array[i] = in.nextInt();
         }
-        System.out.println(array[2]);
-        System.out.println(array[4]);
-        System.out.println(array[9]);
+        for (int i = 0; i < array.length; i++) {
+            if (i == 2 || i == 4 || i == 9) {
+                System.out.printf("%d ", array[i]);
+            }
+
+        }
     }
 }
