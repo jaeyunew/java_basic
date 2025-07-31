@@ -2,6 +2,7 @@ package javabasic_02.day07.Control_ArrayTest;
 
 import javabasic_01.day04.SwitchEx01;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class JavaBasic9 {
@@ -14,8 +15,9 @@ public class JavaBasic9 {
                 """;
         int student = 0;
         int[] score = new int[3];
+        int sum = 0;
 
-
+        Menu:
         while (true) {
             System.out.println(menu);
             System.out.print("선택> ");
@@ -41,12 +43,17 @@ public class JavaBasic9 {
                     break;
                 case 4:
                     for (int i = 0; i < score.length; i++) {
-                        int sum = 0;
                         sum += score[i];
-
                     }
-                    System.out.println("최고 점수: " + );
-                    System.out.printf("평균 점수: %.1f", sum/student );
+                    Arrays.sort(score);
+                    System.out.println("최고 점수: " + score[student - 1]);
+                    System.out.printf("평균 점수: %.1f\n", (double) sum / student);
+                    break;
+                case 5:
+                    System.out.println("프로그램 종료");
+                    break Menu;
+                default:
+                    System.out.println("1~5사이의 숫자만 입력가능합니다.");
             }
         }
     }
