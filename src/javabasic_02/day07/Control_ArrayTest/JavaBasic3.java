@@ -12,5 +12,6 @@ public class JavaBasic3 {
             if (dice1 + dice2 != 5) continue;
             else break;
         }
+
     }
 }

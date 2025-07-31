@@ -14,7 +14,7 @@ public class JavaBasic9 {
                 -----------------------------------------------
                 """;
         int student = 0;
-        int[] score = new int[3];
+        int[] scoreArray = new int[0];
         int sum = 0;
 
         Menu:
@@ -27,26 +27,27 @@ public class JavaBasic9 {
                 case 1:
                     System.out.print("학생수> ");
                     student = in.nextInt();
+                    scoreArray = new int[student];
                     break;
+
                 case 2:
-                    for (int i = 0; i < score.length; i++) {
+                    for (int i = 0; i < scoreArray.length; i++) {
                         System.out.printf("score[%d]>", i);
-                        score[i] = in.nextInt();
+                        scoreArray[i] = in.nextInt();
                     }
                     break;
                 case 3:
-                    for (int i : score) {
-                        int count = 1;
-                        System.out.printf("score[%d]: %d\n", count, i);
-                        count++;
+                    for (int i = 0; i < scoreArray.length; i++) {
+                        int score = scoreArray[i];
+                        System.out.printf("score[%d]: %d\n", i, score);
                     }
                     break;
                 case 4:
-                    for (int i = 0; i < score.length; i++) {
-                        sum += score[i];
+                    for (int i = 0; i < scoreArray.length; i++) {
+                        sum += scoreArray[i];
                     }
-                    Arrays.sort(score);
-                    System.out.println("최고 점수: " + score[student - 1]);
+                    Arrays.sort(scoreArray);
+                    System.out.println("최고 점수: " + scoreArray[student - 1]);
                     System.out.printf("평균 점수: %.1f\n", (double) sum / student);
                     break;
                 case 5:
