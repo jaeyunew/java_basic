@@ -1,4 +1,4 @@
-package javabasic_02.day08;
+package javabasic_02.day08.string;
 // intern() : 문자열 최적화 관리를 위한 메소드
 //문자열을 리터럴로 선언할 경우 내부적으로 String의 intern() 메서드가 호출이 된다
 //해당 리터럴이 문자열상수 pool 안에 존재하는지 확인

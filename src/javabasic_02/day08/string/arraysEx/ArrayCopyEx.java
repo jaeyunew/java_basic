@@ -1,4 +1,4 @@
-package javabasic_02.day08.arraysEx;
+package javabasic_02.day08.string.arraysEx;
 
 import java.util.Arrays;
 

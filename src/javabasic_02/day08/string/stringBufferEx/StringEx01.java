@@ -1,4 +1,4 @@
-package javabasic_02.day08.stringBufferEx;
+package javabasic_02.day08.string.stringBufferEx;
 
 public class StringEx01 {
 

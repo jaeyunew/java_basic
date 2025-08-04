@@ -1,4 +1,4 @@
-package javabasic_02.day08.stringBufferEx;
+package javabasic_02.day08.string.stringBufferEx;
 
 //StringBuffer 주요 메소드
 public class StringBufferEx {

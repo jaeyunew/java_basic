@@ -1,4 +1,4 @@
-package javabasic_02.day08.methods;
+package javabasic_02.day08.string.methods;
 
 public class StringEx01 {
 
@@ -62,6 +62,5 @@ public class StringEx01 {
             String s = boardStr[i];
             System.out.print(s + " ");
         }
-
     }
 }
