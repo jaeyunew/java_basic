@@ -26,7 +26,7 @@ public class Account {
         return number;
     }
 
-    public String getName() {
+    public  String getName() {
         return name;
     }
 

@@ -20,6 +20,7 @@ public class BankApplication {
             -----------
             """;
 
+
     public static void main(String[] args) {
 
 
@@ -51,6 +52,7 @@ public class BankApplication {
         }
     }
 
+
     private static void createAccount() {
         System.out.printf(TITLE_FORMAT, "계좌생성");
         System.out.print("계좌번호: ");
@@ -69,7 +71,7 @@ public class BankApplication {
         System.out.printf(TITLE_FORMAT, "계좌목록");
         for (int i = 0; i < count; i++) {
 
-            System.out.print(accounts[i].getNumber() + "\t" + accounts[i].getName() + "\t" + accounts[i]);
+            System.out.print(accounts[i].getNumber() + "\t" + accounts[i].getName() + "\t" + accounts[i].getBalance());
 
         }
     }
