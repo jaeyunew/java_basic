@@ -30,7 +30,7 @@ public class Employee {
     }
 
     public void print() {
-        System.out.println("이  름 : " + name + "\t나  이 : " + age + "\t학  번 :" +dept);
+        System.out.println("이  름 : " + this.name + "\t나  이 : " + this.age + "\t학  번 :" + this.dept);
 
     }
 }
