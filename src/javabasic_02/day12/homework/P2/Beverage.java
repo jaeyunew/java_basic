@@ -12,16 +12,9 @@ public abstract class Beverage {
         return name;
     }
 
-    public int getPrice() {
-        return price;
-    }
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
     }
 
     public abstract void calcPrice();
@@ -41,7 +34,7 @@ public abstract class Beverage {
         int sum = 0;
 
         for (int i = 0; i < arr.length; i++) {
-            sum += arr[i].getPrice();
+            sum += arr[i].price;
         }
         return sum;
     }
