@@ -1,4 +1,4 @@
-package javabasic_02.day13.afternoon;
+package javabasic_02.day13.afternoon.sec01;
 
 public class SmartTelevision implements RemoteControl, Searchable {
     @Override
