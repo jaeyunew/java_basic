@@ -16,11 +16,11 @@ public class PayMentTest {
 		
 		// Exception 예제 1. 문제파일의 출력 그림 참고하세요.
 //		CardPayment card2 = new CardPayment("예스24","소설책",2000,"843-12-434","1234",-2);
-//		payProcess( card2 );	
-		
+//		payProcess( card2 );
+//
 		// Exception 예제 2. 문제파일의 출력 그림 참고하세요.
 //		CashPayment cash2 = new CashPayment("G마켓","핸드폰",0,"999-56");
-//		payProcess( cash2 );		
+//		payProcess( cash2 );
 
 	}
 	
