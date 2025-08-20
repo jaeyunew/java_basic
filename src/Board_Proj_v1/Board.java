@@ -1,4 +1,4 @@
-package java_advanced_01.day18.Board_Proj_v1;
+package Board_Proj_v1;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
