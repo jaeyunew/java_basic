@@ -3,7 +3,7 @@ package java_advanced_01.day20.testEx;
 import java.util.Arrays;
 import java.util.List;
 
-public class test01 {
+public class Test01 {
     public static void main(String[] args) {
         List<Integer> numbers = Arrays.asList(10, 3, 2, 4, 8, 6, 9, 5, 7, 1);
         List<Integer> evenNumbers = numbers.stream().filter(n -> n % 2 == 0).toList();
