@@ -13,7 +13,7 @@ public class Example02 {
         );
 
         List<Member02> developers = list.stream()
-                .filter(job -> job.getJob().equals("개발자")).toList();
+                .filter(job -> job.getJob().equals("개발자")).collect(Collectors.toList());
 
         developers.forEach(job -> System.out.println(job.getName()));
     }
