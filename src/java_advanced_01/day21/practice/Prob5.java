@@ -20,6 +20,8 @@ public class Prob5 {
                 if (data == -1) break;
                 System.out.println((char) data);
             }
+
+            is.close();
         } catch (FileNotFoundException e) {
             System.out.println("File not found");
         } catch (IOException e) {
