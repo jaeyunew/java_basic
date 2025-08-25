@@ -6,12 +6,16 @@ package java_advanced_01.day20.homework.prob07;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.ToString;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @Getter
 @AllArgsConstructor
+@ToString
 class Fruit{
     private String fruitName;
     private double price;
@@ -29,5 +33,8 @@ public class Prob07 {
                 new Fruit("Cherry",2.99)
 
         );
+
+        Map<Character,List<Fruit>> groupByChar = numbers.stream().collect(Collectors.groupingBy(f->f.getFruitName().charAt(0)));
+        System.out.println(groupByChar);
     }
 }

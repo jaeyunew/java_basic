@@ -6,6 +6,8 @@ import lombok.Getter;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @Getter
 @AllArgsConstructor
@@ -19,12 +21,16 @@ public class Prob08 {
 
     public static void main(String[] args) {
         List<Employee> numbers = Arrays.asList(
-                new Employee("John","HR",5000),
-                new Employee("Jane","HR",5000),
-                new Employee("Steve","Engineering",8000),
-                new Employee("Kelly","Engineering",7000),
-                new Employee("Jim","Sales",8500)
+                new Employee("John", "HR", 5000),
+                new Employee("Jane", "HR", 5000),
+                new Employee("Steve", "Engineering", 8000),
+                new Employee("Kelly", "Engineering", 7000),
+                new Employee("Jim", "Sales", 8500)
 
         );
+
+        Map<String, Double> avg = numbers.stream()
+                .collect(Collectors.groupingBy(Employee::getDepartment, Collectors.averagingDouble(Employee::getSalary)));
+        System.out.println(avg);
     }
 }

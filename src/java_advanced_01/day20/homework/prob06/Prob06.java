@@ -3,12 +3,16 @@ package java_advanced_01.day20.homework.prob06;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.ToString;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @Getter
 @AllArgsConstructor
+@ToString
 class Person{
     private String name;
     private int age;
@@ -25,5 +29,8 @@ public class Prob06 {
                 new Person("Eve",35)
 
                 );
+
+        Map<Integer,List<Person>> groupByAge = numbers.stream().collect(Collectors.groupingBy(Person::getAge));
+        System.out.println(groupByAge);
     }
 }
