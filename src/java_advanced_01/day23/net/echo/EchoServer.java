@@ -62,7 +62,7 @@ public class EchoServer {
 						byte[] bytes = new byte[1024];
 						int readByteCount = is.read(bytes);
 						String message = new String(bytes, 0, readByteCount, "UTF-8");
-						
+
 						//데이터 보내기
 						OutputStream os = socket.getOutputStream();
 						bytes = message.getBytes("UTF-8");
@@ -100,6 +100,8 @@ public class EchoServer {
 			//ServerSocket을 닫고 Port 언바인딩
 			serverSocket.close();
 			System.out.println( "[서버] 종료됨 ");
-		} catch (IOException e1) {}
+		} catch (IOException e1) {
+			System.out.println(e1.getMessage());
+		}
 	}
 }
