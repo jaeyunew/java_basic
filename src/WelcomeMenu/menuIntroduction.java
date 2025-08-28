@@ -1,4 +1,4 @@
-package Welcome;
+package WelcomeMenu;
 
 public class menuIntroduction {
     public static void menuIntroduction() {

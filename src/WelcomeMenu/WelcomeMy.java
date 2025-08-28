@@ -1,4 +1,4 @@
-package Welcome;
+package WelcomeMenu;
 
 import java.util.Scanner;
 

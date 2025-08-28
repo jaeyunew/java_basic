@@ -1,4 +1,4 @@
-package Welcome;
+package WelcomeMenu;
 
 public class menuGuestInfo {
     public static void menuGuestInfo(String name, int mobile) {

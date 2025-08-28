@@ -1,4 +1,4 @@
-package Welcome;
+package WelcomeMenu;
 
 public class menuCartRemoveItemCount {
     public static void menuCartRemoveItemCount() {

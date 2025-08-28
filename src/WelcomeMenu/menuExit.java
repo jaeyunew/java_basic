@@ -1,4 +1,4 @@
-package Welcome;
+package WelcomeMenu;
 
 public class menuExit {
     public static void menuExit() {

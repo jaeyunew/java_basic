@@ -1,4 +1,4 @@
-package Welcome;
+package WelcomeMenu;
 
 public class menuCartBill {
     public static void menuCartBill() {

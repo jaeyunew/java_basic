@@ -1,4 +1,4 @@
-package Welcome;
+package WelcomeMenu;
 
 public class menuCartAddItem {
     public static void menuCartAddItem(){

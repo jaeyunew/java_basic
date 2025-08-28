@@ -1,6 +1,4 @@
-package Welcome;
-
-import org.w3c.dom.ls.LSOutput;
+package WelcomeMenu;
 
 import java.util.Scanner;
 
