@@ -31,11 +31,17 @@ public class ChatServer {
     serverSocket = new ServerSocket(50001);
     System.out.println("[서버] 시작됨");
 
+    // Ctrl+C (프로그램 종료 시그널)를 받았을 때 종료하기 위한 Shutdown Hook 추가
+    Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+      System.out.println("\n[서버] 종료 절차를 시작합니다...");
+      stop();
+    }));
+
     Thread thread = new Thread(() -> {
       try {
         while (true) {
           Socket socket = serverSocket.accept();
-          SocketClient sc = new SocketClient(this, socket);
+          new SocketClient(this, socket);
         }
       } catch (IOException e) {
       }
